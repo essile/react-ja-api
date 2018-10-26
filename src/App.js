@@ -11,13 +11,8 @@ class App extends Component {
       <Router>
         <div className="App">
           <header className="App-header">
-            {/* <h2>Tuotehallinta</h2> */}
-            <Navbar>
-              {/* <Navigaatio /> */}
-              <Nav>
-                <NavItem eventkey={1} href="/tuotteet">Tuotteet</NavItem>
-              </Nav>
-            </Navbar>
+            <h2>Tuotehallinta</h2>             
+              <Navigaatio />
             <hr />
             <Switch>
               <Route exact path="/" component={Etusivu} />
@@ -34,8 +29,8 @@ class Navigaatio extends Component {
   render() {
     return (
       <div>
-        <NavLink to="/" exact activeClassName="active">Koti</NavLink>
-        <NavLink to="/tuotteet" exact activeClassName="active">Tuotteet</NavLink>
+        <NavLink to="/" exact activeClassName="active">&nbsp;&nbsp;&nbsp;Koti&nbsp;&nbsp;&nbsp;</NavLink>
+        <NavLink to="/tuotteet" exact activeClassName="active">&nbsp;&nbsp;&nbsp;Tuotteet&nbsp;&nbsp;&nbsp;</NavLink>
       </div>
     );
   }
